@@ -1,0 +1,59 @@
+{
+  "count": 4,
+  "hourly": 1,
+  "sources": [
+    [
+      "Direct",
+      4
+    ],
+    [
+      "Google",
+      0
+    ],
+    [
+      "Twitter/X",
+      0
+    ],
+    [
+      "LinkedIn",
+      0
+    ]
+  ],
+  "countries": [
+    [
+      "Unknown",
+      2
+    ],
+    [
+      "DE",
+      2
+    ]
+  ],
+  "devices": [
+    [
+      "desktop",
+      4
+    ],
+    [
+      "mobile",
+      0
+    ],
+    [
+      "tablet",
+      0
+    ]
+  ],
+  "browsers": [
+    [
+      "Chrome",
+      2
+    ],
+    [
+      "other",
+      2
+    ]
+  ],
+  "hours": {
+    "17:00": 4
+  }
+}
