@@ -43,7 +43,7 @@ def bar_svg(width, height, data, title=""):
     if not data:
         return f'''<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" xmlns="http://www.w3.org/2000/svg">
   <rect width="{width}" height="{height}" rx="8" fill="{COLORS['card_bg']}"/>
-  <text x="{width//2}" y="{height//2+4}" text-anchor="middle" fill="{COLORS['text_secondary']}" font-size="12">No data yet</text>
+  <text x="{width//2}" y="{height//2+4}" text-anchor="middle" fill="#8b949e" font-size="12">No data yet</text>
 </svg>'''
     
     max_val = max(data.values()) if data else 1
@@ -52,7 +52,7 @@ def bar_svg(width, height, data, title=""):
     x = 12
     for k, v in sorted(data.items()):
         h = max(4, int((v / max_val) * (height - 40)))
-        bars += f'<rect x="{x}" y="{height - 16 - h}" width="{max(2, bar_w - 2)}" height="{h}" rx="2" fill="{COLORS['blue']}"/>'
+        bars += f'<rect x="{x}" y="{height - 16 - h}" width="{max(2, bar_w - 2)}" height="{h}" rx="2" fill="#3498db"/>'
         x += bar_w
     
     title_el = f'<text x="12" y="18" font-family="Inter, sans-serif" font-size="11" fill="{COLORS["text_secondary"]}">{title}</text>' if title else ""
