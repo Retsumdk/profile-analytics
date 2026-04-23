@@ -21,30 +21,19 @@ jobs:
         with:
           python-version: '3.11'
       
-      - name: Debug - List files
+      - name: Fetch and generate
         run: |
-          echo "=== PWD ===" && pwd && ls -la
-          echo "=== Git status ===" && git status
-          echo "=== Git remote ===" && git remote -v
-      
-      - name: Fetch analytics
-        run: |
-          echo "=== fetch_analytics.py ===" 
-          cat fetch_analytics.py
-          echo "=== Running ===" 
-          python3 fetch_analytics.py 2>&1 || echo "fetch_analytics.py failed with exit code $?"
-      
-      - name: Generate cards
-        run: |
-          echo "=== generate_cards.py ===" 
-          head -20 generate_cards.py
-          echo "=== Running ===" 
-          python3 generate_cards.py 2>&1 || echo "generate_cards.py failed with exit code $?"
+          python3 fetch_analytics.py
+          python3 generate_cards.py
       
       - name: Commit and push
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          git status
-          git diff --staged --quiet && echo "Nothing to commit" || { git commit -m "Update analytics $(date +'%Y-%m-%d %H:%M')"; git push; }
+          if git diff --staged --quiet; then
+            echo "No changes needed"
+          else
+            git commit -m "Update analytics $(date +'%Y-%m-%d %H:%M')"
+            git push
+          fi
