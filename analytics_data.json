@@ -1,10 +1,10 @@
 {
-  "count": 11,
+  "count": 15,
   "hourly": 2,
   "sources": [
     [
       "Direct",
-      11
+      15
     ],
     [
       "Google",
@@ -22,11 +22,11 @@
   "countries": [
     [
       "Unknown",
-      7
+      10
     ],
     [
       "DE",
-      3
+      4
     ],
     [
       "US",
@@ -36,7 +36,7 @@
   "devices": [
     [
       "desktop",
-      11
+      15
     ],
     [
       "mobile",
@@ -50,15 +50,15 @@
   "browsers": [
     [
       "other",
-      8
+      11
     ],
     [
       "Chrome",
-      3
+      4
     ]
   ],
   "hours": {
-    "18:00": 5,
+    "18:00": 9,
     "17:00": 6
   }
 }
