@@ -9,9 +9,11 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          persist-credentials: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
       
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -24,8 +26,6 @@ jobs:
           python3 generate_cards.py
       
       - name: Commit and push
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
