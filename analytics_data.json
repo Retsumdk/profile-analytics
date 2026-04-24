@@ -1,5 +1,5 @@
 {
-  "count": 841,
+  "count": 855,
   "hourly": 0,
   "sources": [
     [
@@ -42,11 +42,11 @@
   "browsers": [
     [
       "Other",
-      31
+      44
     ],
     [
       "Chrome",
-      19
+      6
     ]
   ],
   "hours": {}
