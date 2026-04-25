@@ -35,5 +35,5 @@ jobs:
             echo "No changes needed"
           else
             git commit -m "Update analytics $(date +'%Y-%m-%d %H:%M')"
-            git push
+            git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/Retsumdk/profile-analytics.git && git push origin HEAD:main
           fi
