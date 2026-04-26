@@ -17,6 +17,10 @@
 ![Devices](https://github.com/Retsumdk/profile-analytics/raw/main/cards/devices.svg)
 ![Browsers](https://github.com/Retsumdk/profile-analytics/raw/main/cards/browsers.svg)
 
+## 🔗 Related Repos
+
+- [Retsumdk](https://github.com/Retsumdk/Retsumdk) — Main GitHub profile with live analytics dashboard
+
 ---
 *Auto-updated every hour*
 
