@@ -2,5 +2,5 @@
   <rect width="260" height="100" rx="8" fill="#161b22"/>
   <rect width="260" height="100" rx="8" fill="none" stroke="#30363d" stroke-width="1"/>
   <text x="12" y="18" font-family="Arial, sans-serif" font-size="11" fill="#8b949e">Browsers</text>
-  <text x="12" y="28" font-family="Arial, sans-serif" font-size="12" fill="#c9d1d9">Other</text><text x="248" y="28" font-family="Arial, sans-serif" font-size="12" fill="#f85149" text-anchor="end">662</text><text x="12" y="46" font-family="Arial, sans-serif" font-size="12" fill="#c9d1d9">Chrome</text><text x="248" y="46" font-family="Arial, sans-serif" font-size="12" fill="#f85149" text-anchor="end">338</text>
+  <text x="12" y="28" font-family="Arial, sans-serif" font-size="12" fill="#c9d1d9">Other</text><text x="248" y="28" font-family="Arial, sans-serif" font-size="12" fill="#f85149" text-anchor="end">663</text><text x="12" y="46" font-family="Arial, sans-serif" font-size="12" fill="#c9d1d9">Chrome</text><text x="248" y="46" font-family="Arial, sans-serif" font-size="12" fill="#f85149" text-anchor="end">337</text>
 </svg>
